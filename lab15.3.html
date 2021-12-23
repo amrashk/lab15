@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+	table, td, tr{
+		border:1px solid black;
+	}
+</style>
+ Mor <input type ='number' id='numb1'>
+ Bagana <input type ='number' id='numb2'>
+  <button type="button" onclick="Husnegt()">Submit</button>
+  <p id ="table"></p>
+  <script>
+	function Husnegt() {
+		var bagana = document.getElementById('numb2').value;
+		var t = 0;
+		var mur = document.getElementById('numb1').value;
+		content = "<table>"
+		for( i = 0; i < mur; i++)
+		{	content+="<tr></tr>"
+			for( j = 0; j < bagana; j++)
+			{	t++;
+				content += "<td>"+t+"</td>"
+			}
+		}
+		content+="</table>"
+		document.getElementById("table").innerHTML=content;
+	}
+  </script>
+
+</body>
+</html> 

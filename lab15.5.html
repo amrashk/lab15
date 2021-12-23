@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+	table, td, tr{
+		border:1px solid black;
+	}
+</style>
+    <p>
+   	<table id = "table">
+    	<tr>
+    		<th>Name</th>
+    		<th>Town</th>
+    	</tr>
+    	<tr>
+    		<td>Eve</td>
+    		<td>Sofia</td>
+    	</tr>
+    	<tr>
+    		<td>Nick</td>
+    		<td>Varna</td>
+    	</tr>
+    	<tr>
+    		<td>Didi</td>
+    		<td>Ruse</td>
+    	</tr>
+    	<tr>
+    		<td>Tedy</td>
+    		<td>Varna</td>
+    	</tr>
+    </table>
+    <br>
+    <button type="button"  onclick = "myFunction()">Colorize</button>
+    </p>
+ <script type="text/javascript">
+ 	function myFunction() {
+ 		var x = document.getElementById("table").rows.length;
+ 		for ( i =0; i < x*2; i=i+4)
+ 		{ 
+ 				document.getElementsByTagName('td')[i].style.backgroundColor = "orange";
+ 				document.getElementsByTagName('td')[i+1].style.backgroundColor = "orange";
+ 		}
+ 	}
+ </script>
+</body>
+</html>
